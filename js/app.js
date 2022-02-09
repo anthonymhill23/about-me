@@ -1,16 +1,55 @@
 'use strict';
 
-console.log ('I am the greatest')
+console.log('I am the greatest')
 
-let answerOne = prompt ('Am I am a fan of Star Wars?') .toLowerCase();
+let userName = prompt('what shall we call you?');
+alert(`Welcome ${userName}! Please play this guessing game I have constructed for you to learn a little bit about me, the person who made this page`);
+
+let answerOne = prompt('Am I am a fan of Star Wars?').toLowerCase();
 
 if (answerOne === 'yes' || answerOne === 'y') {
-  alert ('This is the way');
+  alert('This is the way');
 
 
 } else if (answerOne === 'no' || answerOne === 'n') {
   alert('wrong, I do in fact know the ways of the darkside');
-  
-}  {
-  
+
+} {
+
 }
+
+let answerTwo = prompt('Am I an only child?').toLowerCase();
+
+if (answerTwo === 'yes' || answerTwo === 'y')
+  alert('Nope, I have 4 Brothers and 4 Sisters');
+else if (answerTwo === 'no' || answerTwo === 'n') {
+  alert(`You are correct, I have 4 brothers and 4 sisters, I'm the oldest`)
+}
+let answerThree = prompt('Am i into Powerlifting?').toLowerCase();
+
+if (answerThree === 'y' || answerThree === 'yes')
+alert ( ' Yes I am, I am preparing for my first meet next year  ');
+else if (answerThree === 'n' ||  answerThree === 'no')
+alert `you are wrong, I am a amateur powerlifter in training`;{
+
+
+}
+
+let answerFour = prompt ('Do I have any pets?').toLowerCase();
+if (answerFour === 'yes' ||  answerFour === 'y')
+alert ('Yes I do, I have two cats') 
+else if (answerFour === 'n' || answerFour === 'no')
+
+alert `Actually I do have pets, I have two cats`;{
+
+}
+
+let answerFive = prompt (' Am I new to coding?' ).toLowerCase();
+if (answerFive === 'yes ' || answerFive === 'y')
+alert ` I am super new to coding, I have never programmed ANYTHING before attending code fellows`
+else if (answerFive === 'n' || answerFive  == 'no')
+alert ` I am actually very new to coding, this is the first class I've ever attended to learn my new skillset`;{
+
+}
+
+alert (`well ${userName} I appreciate you playing the guessing game . I had fun creating it, How many did you get correct?`)
