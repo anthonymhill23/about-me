@@ -7,7 +7,7 @@ ABbout me
 I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
 
 Author:Anthony Hill
-Links and Resources 
+Links and Resources : My biohazard coffee image was sourced from my affiliate  status for [Biohazard Coffee](https://biohazardcoffee.com/?aff=114)I also used [W3schools](https://www.w3schools.com/html/html_css.asp) 
 Any Links you used as reference
 Reflections and Comments
 Consider including the answers to your daily journal and submission questions here
