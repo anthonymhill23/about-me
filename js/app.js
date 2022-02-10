@@ -28,28 +28,49 @@ else if (answerTwo === 'no' || answerTwo === 'n') {
 let answerThree = prompt('Am i into Powerlifting?').toLowerCase();
 
 if (answerThree === 'y' || answerThree === 'yes')
-alert ( ' Yes I am, I am preparing for my first meet next year  ');
-else if (answerThree === 'n' ||  answerThree === 'no')
-alert `you are wrong, I am a amateur powerlifter in training`;{
+  alert(' Yes I am, I am preparing for my first meet next year  ');
+else if (answerThree === 'n' || answerThree === 'no')
+  alert`you are wrong, I am a amateur powerlifter in training`; {
 
 
 }
 
-let answerFour = prompt ('Do I have any pets?').toLowerCase();
-if (answerFour === 'yes' ||  answerFour === 'y')
-alert ('Yes I do, I have two cats') 
-else if (answerFour === 'n' || answerFour === 'no')
+let answerFour = prompt('Do I have any pets?').toLowerCase();
+if (answerFour === 'yes' || answerFour === 'y') {
+  alert('Yes I do, I have two cats');
+} else if (answerFour === 'n' || answerFour === 'no') {
 
-alert `Actually I do have pets, I have two cats`;{
 
-}
-
-let answerFive = prompt (' Am I new to coding?' ).toLowerCase();
-if (answerFive === 'yes ' || answerFive === 'y')
-alert ` I am super new to coding, I have never programmed ANYTHING before attending code fellows`
-else if (answerFive === 'n' || answerFive  == 'no')
-alert ` I am actually very new to coding, this is the first class I've ever attended to learn my new skillset`;{
+  alert(`Actually I do have pets, I have two cats`);
 
 }
 
-alert (`well ${userName} I appreciate you playing the guessing game . I had fun creating it, How many did you get correct?`)
+let answerFive = prompt(' Am I new to coding?').toLowerCase();
+if (answerFive === 'yes ' || answerFive === 'y') {
+  alert(`I am super new to coding, I have never programmed ANYTHING before attending code fellows`);
+} else if (answerFive === 'n' || answerFive == 'no') {
+  alert(` I am actually very new to coding, this is the first class I've ever attended to learn my new skillset`);
+
+}
+
+alert(`well ${userName} I appreciate you playing the guessing game . I had fun creating it, How many did you get correct?`);
+
+
+//let userGuess = prompt('Guess a number between 1-6');
+let guessAnswer = 6;
+let attempts = 4;
+while (attempts) {
+
+  attempts--;
+  let userGuess = prompt('guess a number');
+  if (parseInt(userGuess) === guessAnswer) {
+    alert('You guessed correct!');
+    break;
+  } else if (userGuess > guessAnswer) {
+    alert('That\'s too high');
+  } else if (attempts === 0) {
+    alert(' You ran out of guesses , the correct number was 6!');
+  } else {
+    alert(`That\'s  too low`);
+  }
+}
