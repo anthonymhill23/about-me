@@ -1,6 +1,6 @@
 body { 
   background-color: purple;
-
+text-align: center;
 }
 
 h1 {
@@ -10,4 +10,6 @@ h1 {
 
 p{
   color: white;
+  text-align: center;
+  font-family: verdana;
 }
