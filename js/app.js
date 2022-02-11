@@ -7,6 +7,8 @@ let userName = prompt('what shall we call you?');
 alert(`Welcome ${userName}! Please play this guessing game I have constructed for you to learn a little bit about me, the person who made this page`);
 let counter = 0;
 
+function starWars() {
+
 let answerOne = prompt('Am I am a fan of Star Wars?').toLowerCase();
 
 if (answerOne === 'yes' || answerOne === 'y') {
@@ -15,7 +17,7 @@ if (answerOne === 'yes' || answerOne === 'y') {
 } else if (answerOne === 'no' || answerOne === 'n') {
   alert('wrong, I do in fact know the ways of the darkside');
 }
-
+}
 
 function quessSib() {
 let answerTwo = prompt('Am I an only child?').toLowerCase();
