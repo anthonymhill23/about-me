@@ -3,7 +3,6 @@
 console.log('I am the greatest');
 
 
-
 let userName = prompt('what shall we call you?');
 alert(`Welcome ${userName}! Please play this guessing game I have constructed for you to learn a little bit about me, the person who made this page`);
 let counter = 0;
@@ -18,7 +17,7 @@ if (answerOne === 'yes' || answerOne === 'y') {
 }
 
 
-
+function quessSib() {
 let answerTwo = prompt('Am I an only child?').toLowerCase();
 
 if (answerTwo === 'yes' || answerTwo === 'y'); {
@@ -27,20 +26,22 @@ if (answerTwo === 'yes' || answerTwo === 'y'); {
   alert(`You are correct, I have 4 brothers and 4 sisters, I'm the oldest`);
   counter++;
 }
+}
 
 
-
+function guessLift() {
 let answerThree = prompt('Am i into Powerlifting?').toLowerCase();
 
 if (answerThree === 'y' || answerThree === 'yes') {
-  alert(' Yes I am, I am preparing for my first meet next year  ');
+  alert(' Yes I am, I am preparing for my first meet next year');
   counter++;
 } else if (answerThree === 'n' || answerThree === 'no') {
   alert`you are wrong, I am a amateur powerlifter in training`;
 }
+}
 
 
-
+function guessPets() {
 
 let answerFour = prompt('Do I have any pets?').toLowerCase();
 if (answerFour === 'yes' || answerFour === 'y') {
@@ -49,10 +50,9 @@ if (answerFour === 'yes' || answerFour === 'y') {
 } else if (answerFour === 'n' || answerFour === 'no') {
   alert(`Actually I do have pets, I have two cats`);
 }
+}
 
-
-
-
+function newCode() {
 
 let answerFive = prompt(' Am I new to coding?').toLowerCase();
 if (answerFive === 'yes ' || answerFive === 'y') {
@@ -61,11 +61,12 @@ if (answerFive === 'yes ' || answerFive === 'y') {
 } else if (answerFive === 'n' || answerFive == 'no') {
   alert(` I am actually very new to coding, this is the first class I've ever attended to learn my new skillset`);
 }
-
 alert(`well ${userName} I appreciate you playing the guessing game . I had fun creating it, How many did you get correct?`);
+}
 
 
 
+function guessNum() { 
 
 //let userGuess = prompt('Guess a number between 1-6');
 let guessAnswer = 6;
@@ -86,16 +87,16 @@ while (attempts) {
     alert(`That\'s  too low`);
   }
 }
+}
 
-let favSithlords = ['darthvader', 'darthplagus', 'darthsidious', 'darthbane', 'darthrevan'];
 
 // -------- NESTED FOR-LOOP ----------
 // need to build logic for incorrect answer
 //for (let count = 1; count <= 6; count++) {
 //}
+let favSithlords = ['darthvader', 'darthplagus', 'darthsidious', 'darthbane', 'darthrevan'];
 
-
-
+function sithLords (favSithlords) {
 
 let userAttempts = 6
 starwars: while (userAttempts >= 0) {
@@ -120,6 +121,6 @@ starwars: while (userAttempts >= 0) {
 
 }
 alert(favSithlords)
-
+}
 
 
