@@ -19,7 +19,7 @@ if (answerOne === 'yes' || answerOne === 'y') {
 }
 }
 
-function quessSib() {
+function guessSib() {
 let answerTwo = prompt('Am I an only child?').toLowerCase();
 
 if (answerTwo === 'yes' || answerTwo === 'y'); {
@@ -125,4 +125,10 @@ starwars: while (userAttempts >= 0) {
 alert(favSithlords)
 }
 
-
+starWars();
+guessSib();
+guessLift();
+guessPets();
+newCode();
+guessNum();
+sithLords(favSithlords);
