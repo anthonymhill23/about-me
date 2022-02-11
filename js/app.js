@@ -9,86 +9,86 @@ let counter = 0;
 
 function starWars() {
 
-let answerOne = prompt('Am I am a fan of Star Wars?').toLowerCase();
+  let answerOne = prompt('Am I am a fan of Star Wars?').toLowerCase();
 
-if (answerOne === 'yes' || answerOne === 'y') {
-  alert('This is the way');
-  counter++;
-} else if (answerOne === 'no' || answerOne === 'n') {
-  alert('wrong, I do in fact know the ways of the darkside');
-}
+  if (answerOne === 'yes' || answerOne === 'y') {
+    alert('This is the way');
+    counter++;
+  } else if (answerOne === 'no' || answerOne === 'n') {
+    alert('wrong, I do in fact know the ways of the darkside');
+  }
 }
 
 function guessSib() {
-let answerTwo = prompt('Am I an only child?').toLowerCase();
+  let answerTwo = prompt('Am I an only child?').toLowerCase();
 
-if (answerTwo === 'yes' || answerTwo === 'y'); {
-  alert('Nope, I have 4 Brothers and 4 Sisters');
-} else if (answerTwo === 'no' || answerTwo === 'n') {
-  alert(`You are correct, I have 4 brothers and 4 sisters, I'm the oldest`);
-  counter++;
-}
+  if (answerTwo === 'yes' || answerTwo === 'y') {
+    alert('Nope, I have 4 Brothers and 4 Sisters');
+  } else if (answerTwo === 'no' || answerTwo === 'n') {
+    alert(`You are correct, I have 4 brothers and 4 sisters, I'm the oldest`);
+    counter++;
+  }
 }
 
 
 function guessLift() {
-let answerThree = prompt('Am i into Powerlifting?').toLowerCase();
+  let answerThree = prompt('Am i into Powerlifting?').toLowerCase();
 
-if (answerThree === 'y' || answerThree === 'yes') {
-  alert(' Yes I am, I am preparing for my first meet next year');
-  counter++;
-} else if (answerThree === 'n' || answerThree === 'no') {
-  alert`you are wrong, I am a amateur powerlifter in training`;
-}
+  if (answerThree === 'y' || answerThree === 'yes') {
+    alert(' Yes I am, I am preparing for my first meet next year');
+    counter++;
+  } else if (answerThree === 'n' || answerThree === 'no') {
+    alert`you are wrong, I am a amateur powerlifter in training`;
+  }
 }
 
 
 function guessPets() {
 
-let answerFour = prompt('Do I have any pets?').toLowerCase();
-if (answerFour === 'yes' || answerFour === 'y') {
-  alert('Yes I do, I have two cats');
-  counter++;
-} else if (answerFour === 'n' || answerFour === 'no') {
-  alert(`Actually I do have pets, I have two cats`);
-}
+  let answerFour = prompt('Do I have any pets?').toLowerCase();
+  if (answerFour === 'yes' || answerFour === 'y') {
+    alert('Yes I do, I have two cats');
+    counter++;
+  } else if (answerFour === 'n' || answerFour === 'no') {
+    alert(`Actually I do have pets, I have two cats`);
+  }
 }
 
 function newCode() {
 
-let answerFive = prompt(' Am I new to coding?').toLowerCase();
-if (answerFive === 'yes ' || answerFive === 'y') {
-  alert(`I am super new to coding, I have never programmed ANYTHING before attending code fellows`);
-  counter++;
-} else if (answerFive === 'n' || answerFive == 'no') {
-  alert(` I am actually very new to coding, this is the first class I've ever attended to learn my new skillset`);
-}
-alert(`well ${userName} I appreciate you playing the guessing game . I had fun creating it, How many did you get correct?`);
-}
-
-
-
-function guessNum() { 
-
-//let userGuess = prompt('Guess a number between 1-6');
-let guessAnswer = 6;
-let attempts = 4;
-while (attempts) {
-
-  attempts--;
-  let userGuess = prompt('guess a number');
-  if (parseInt(userGuess) === guessAnswer) {
-    alert('You guessed correct!');
+  let answerFive = prompt(' Am I new to coding?').toLowerCase();
+  if (answerFive === 'yes ' || answerFive === 'y') {
+    alert(`I am super new to coding, I have never programmed ANYTHING before attending code fellows`);
     counter++;
-    break;
-  } else if (userGuess > guessAnswer) {
-    alert('That\'s too high');
-  } else if (attempts === 0) {
-    alert(' You ran out of guesses , the correct number was 6!');
-  } else {
-    alert(`That\'s  too low`);
+  } else if (answerFive === 'n' || answerFive === 'no') {
+    alert(` I am actually very new to coding, this is the first class I've ever attended to learn my new skillset`);
   }
+  alert(`well ${userName} I appreciate you playing the guessing game . I had fun creating it, How many did you get correct?`);
 }
+
+
+
+function guessNum() {
+
+  //let userGuess = prompt('Guess a number between 1-6');
+  let guessAnswer = 6;
+  let attempts = 4;
+  while (attempts) {
+
+    attempts--;
+    let userGuess = prompt('guess a number');
+    if (parseInt(userGuess) === guessAnswer) {
+      alert('You guessed correct!');
+      counter++;
+      break;
+    } else if (userGuess > guessAnswer) {
+      alert('That\'s too high');
+    } else if (attempts === 0) {
+      alert(' You ran out of guesses , the correct number was 6!');
+    } else {
+      alert(`That's  too low`);
+    }
+  }
 }
 
 
@@ -98,31 +98,31 @@ while (attempts) {
 //}
 let favSithlords = ['darthvader', 'darthplagus', 'darthsidious', 'darthbane', 'darthrevan'];
 
-function sithLords (favSithlords) {
+function sithLords(favSithlords) {
 
-let userAttempts = 6
-starwars: while (userAttempts >= 0) {
-  let response = prompt("Name one of my fav sith lords").toLowerCase();
-  userAttempts--
+  let userAttempts = 6;
+  starwars: while (userAttempts >= 0) {
+    let response = prompt("Name one of my fav sith lords").toLowerCase();
+    userAttempts--;
 
-  for (let i = 0; i < favSithlords.length; i++) {
+    for (let i = 0; i < favSithlords.length; i++) {
 
-    let fav = favSithlords[i];
-    // console.log(i);
-    if (fav === response) {
-      alert('You got one!');
-      counter++;
-      //count = 6;
-      break starwars;
+      let fav = favSithlords[i];
+      // console.log(i);
+      if (fav === response) {
+        alert('You got one!');
+        counter++;
+        //count = 6;
+        break starwars;
+      }
+      //else { 
+      //alert ('Nope, that\'s wrong');
+
+      //}
     }
-    //else { 
-    //alert ('Nope, that\'s wrong');
 
-    //}
   }
-
-}
-alert(favSithlords)
+  alert(favSithlords);
 }
 
 starWars();
@@ -132,3 +132,5 @@ guessPets();
 newCode();
 guessNum();
 sithLords(favSithlords);
+
+alert(`Thanks for playing ${userName} you got ${counter} questions right!`);
