@@ -25,7 +25,7 @@ function guessSib() {
   if (answerTwo === 'yes' || answerTwo === 'y') {
     alert('Nope, I have 4 Brothers and 4 Sisters');
   } else if (answerTwo === 'no' || answerTwo === 'n') {
-    alert(`You are correct, I have 4 brothers and 4 sisters, I'm the oldest`);
+    alert('You are correct, I have 4 brothers and 4 sisters, I\'m the oldest');
     counter++;
   }
 }
@@ -50,7 +50,7 @@ function guessPets() {
     alert('Yes I do, I have two cats');
     counter++;
   } else if (answerFour === 'n' || answerFour === 'no') {
-    alert(`Actually I do have pets, I have two cats`);
+    alert('Actually I do have pets, I have two cats');
   }
 }
 
@@ -58,12 +58,11 @@ function newCode() {
 
   let answerFive = prompt(' Am I new to coding?').toLowerCase();
   if (answerFive === 'yes ' || answerFive === 'y') {
-    alert(`I am super new to coding, I have never programmed ANYTHING before attending code fellows`);
+    alert('I am super new to coding, I have never programmed ANYTHING before attending code fellows');
     counter++;
   } else if (answerFive === 'n' || answerFive === 'no') {
-    alert(` I am actually very new to coding, this is the first class I've ever attended to learn my new skillset`);
+    alert('I am actually very new to coding, this is the first class I\'ve ever attended to learn my new skillset');
   }
-  alert(`well ${userName} I appreciate you playing the guessing game . I had fun creating it, How many did you get correct?`);
 }
 
 
@@ -86,7 +85,7 @@ function guessNum() {
     } else if (attempts === 0) {
       alert(' You ran out of guesses , the correct number was 6!');
     } else {
-      alert(`That's  too low`);
+      alert('That\'s  too low');
     }
   }
 }
@@ -102,25 +101,17 @@ function sithLords(favSithlords) {
 
   let userAttempts = 6;
   starwars: while (userAttempts >= 0) {
-    let response = prompt("Name one of my fav sith lords").toLowerCase();
+    let response = prompt('Name one of my fav sith lords').toLowerCase();
     userAttempts--;
 
     for (let i = 0; i < favSithlords.length; i++) {
-
       let fav = favSithlords[i];
-      // console.log(i);
       if (fav === response) {
         alert('You got one!');
         counter++;
-        //count = 6;
         break starwars;
       }
-      //else { 
-      //alert ('Nope, that\'s wrong');
-
-      //}
     }
-
   }
   alert(favSithlords);
 }
