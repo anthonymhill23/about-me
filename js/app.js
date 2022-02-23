@@ -75,7 +75,7 @@ while (attempts) {
   }
 }
 
-let favSithlords = ['darthvader', 'darthplagus', 'darthsidious', 'darthbane','darthrevan'];
+let favSithlords = ['darthvader', 'darthplagus', 'darthsidious', 'darthbane', 'darthrevan'];
 
 // -------- NESTED FOR-LOOP ----------
 // need to build logic for incorrect answer
@@ -84,22 +84,22 @@ let favSithlords = ['darthvader', 'darthplagus', 'darthsidious', 'darthbane','da
 
 
 let userAttempts = 6
-starwars:while (userAttempts >=0 ){
-let response = prompt("Name one of my fav sith lords").toLowerCase();
-userAttempts-- 
+starwars: while (userAttempts >= 0) {
+  let response = prompt("Name one of my fav sith lords").toLowerCase();
+  userAttempts--
 
-  for (let i = 0; i < favSithlords.length; i++){
-  
+  for (let i = 0; i < favSithlords.length; i++) {
+
     let fav = favSithlords[i];
- // console.log(i);
+    // console.log(i);
     if (fav === response) {
       alert('You got one!');
       //count = 6;
       break starwars;
     }
     //else { 
-      //alert ('Nope, that\'s wrong');
-      
+    //alert ('Nope, that\'s wrong');
+
     //}
   }
 
