@@ -90,16 +90,12 @@ function guessNum() {
   }
 }
 
-<<<<<<< HEAD
 let favSithlords = ['darthvader', 'darthplagus', 'darthsidious', 'darthbane', 'darthrevan'];
-=======
->>>>>>> 3a29f05ee50d150ccfcbf4528a9de3aef004799e
 
 // -------- NESTED FOR-LOOP ----------
 // need to build logic for incorrect answer
 //for (let count = 1; count <= 6; count++) {
 //}
-<<<<<<< HEAD
 
 
 let userAttempts = 6
@@ -120,25 +116,6 @@ starwars: while (userAttempts >= 0) {
     //alert ('Nope, that\'s wrong');
 
     //}
-=======
-let favSithlords = ['darthvader', 'darthplagus', 'darthsidious', 'darthbane', 'darthrevan'];
-
-function sithLords(favSithlords) {
-
-  let userAttempts = 6;
-  starwars: while (userAttempts >= 0) {
-    let response = prompt('Name one of my fav sith lords').toLowerCase();
-    userAttempts--;
-
-    for (let i = 0; i < favSithlords.length; i++) {
-      let fav = favSithlords[i];
-      if (fav === response) {
-        alert('You got one!');
-        counter++;
-        break starwars;
-      }
-    }
->>>>>>> 3a29f05ee50d150ccfcbf4528a9de3aef004799e
   }
   alert(favSithlords);
 }
