@@ -75,7 +75,7 @@ function guessNum() {
   while (attempts) {
 
     attempts--;
-    let userGuess = prompt('guess a number');
+    let userGuess = prompt('guess a number between 1-10');
     if (parseInt(userGuess) === guessAnswer) {
       alert('You guessed correct!');
       counter++;
